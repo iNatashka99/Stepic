@@ -1,7 +1,7 @@
 package javabasiccourse.textanalyzer;
 
 public class SpamAnalyzer extends KeywordAnalyzer{
-    private String[] keywords;
+    private final String[] keywords;
 
     public SpamAnalyzer(String[] spamKeywords){
         this.keywords = spamKeywords.clone();
