@@ -40,13 +40,7 @@ public class Main {
                 animals[i] = (Animal) objectInputStream.readObject();
             }
         }
-        catch (IOException e) {
-            throw new IllegalArgumentException(e);
-        }
-        catch (ClassNotFoundException e) {
-            throw new IllegalArgumentException(e);
-        }
-        catch (ClassCastException e) {
+        catch (IOException | ClassCastException | ClassNotFoundException e) {
             throw new IllegalArgumentException(e);
         }
         return animals;
