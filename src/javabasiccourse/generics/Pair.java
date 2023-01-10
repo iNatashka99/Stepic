@@ -31,7 +31,7 @@ public class Pair <Type1, Type2> {
             return true;
         }
         Pair<?, ?> other = (Pair<?, ?>) obj;
-        return obj instanceof Pair
+        return obj != null
                 && Objects.equals(value1, other.value1)
                 && Objects.equals(value2, other.value2);
     }

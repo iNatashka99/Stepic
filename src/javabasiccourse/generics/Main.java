@@ -8,7 +8,7 @@ public class Main {
         System.out.println(i);
         String s = pair.getSecond(); // "hello"
         System.out.println(s);
-        Pair<Integer, String> pair2 = Pair.of(null, "hello");
+        Pair<Integer, String> pair2 = Pair.of(1, "hello");
         boolean mustBeTrue = pair.equals(pair2); // true!
         System.out.println(mustBeTrue);
         boolean mustAlsoBeTrue = pair.hashCode() == pair2.hashCode(); // true!
